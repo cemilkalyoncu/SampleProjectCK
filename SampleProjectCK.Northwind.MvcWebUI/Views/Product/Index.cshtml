@@ -1,0 +1,15 @@
+﻿@model SampleProjectCK.Northwind.MvcWebUI.Models.ProductListViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h2>Index</h2>
+
+<div>
+    @foreach (var product in Model.Products)
+    {
+        @product.ProductName
+        <br />
+    }
+</div>
